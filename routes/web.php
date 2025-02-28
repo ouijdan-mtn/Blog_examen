@@ -26,7 +26,7 @@ Route::get('/home', function () {
 })->middleware('auth');
 Route::resource('posts', PostController::class)->middleware('auth');
 
-Route::resource('posts', PostController::class);
+// Route::resource('posts', PostController::class);
 
 Auth::routes();
 
